@@ -376,7 +376,7 @@ for i = 1, numf do
 	f:SetMaxLines(C.combattext.max_lines)
 	f:SetSpacing(1)
 	f:SetWidth(128)
-	f:SetHeight(112)
+	f:SetHeight(200)
 	f:SetPoint("CENTER", 0, 0)
 	f:SetMovable(true)
 	f:SetResizable(true)
@@ -388,29 +388,29 @@ for i = 1, numf do
 	if i == 1 then
 		f:SetJustifyH(ct.justify_1)
 		if C.unitframe.enable == true and _G.oUF_Player then
-			f:SetPoint("BOTTOMLEFT", "oUF_Player", "TOPLEFT", -3, 60)
+			f:SetPoint("BOTTOMLEFT", "oUF_Player", "TOPLEFT", -53, 75)
 		else
 			f:SetPoint("CENTER", -192, -32)
 		end
 	elseif i == 2 then
 		f:SetJustifyH(ct.justify_2)
 		if C.unitframe.enable == true and _G.oUF_Player then
-			f:SetPoint("BOTTOMRIGHT", "oUF_Player", "TOPRIGHT", 5, 60)
+			f:SetPoint("BOTTOMRIGHT", "oUF_Player", "TOPRIGHT", 5, 75)
 		else
 			f:SetPoint("CENTER", 192, -32)
 		end
 	elseif i == 3 then
 		f:SetJustifyH(ct.justify_3)
 		f:SetWidth(256)
-		f:SetPoint("CENTER", 0, 205)
+		f:SetPoint("CENTER", 0, 325)
 	else
 		f:SetJustifyH(ct.justify_4)
-		f:SetWidth(200)
+		f:SetWidth(220)
 		if C.combattext.icons then
-			f:SetHeight(150)
+			f:SetHeight(400)
 		end
 		if C.unitframe.enable == true and _G.oUF_Target then
-			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", 2, 278)
+			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", 52, 75)
 		else
 			f:SetPoint("CENTER", 330, 205)
 		end
