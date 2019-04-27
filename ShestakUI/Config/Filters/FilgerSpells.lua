@@ -88,27 +88,27 @@ C["filger_spells"] = {
 			-- Enchants
 
 		},
-		-- {
-			-- Name = "T_DEBUFF_ICON",
-			-- Direction = "RIGHT",
-			-- Mode = "ICON",
-			-- Interval = 3,
-			-- Alpha = 1,
-			-- IconSize = C.filger.buffs_size,
-			-- Position = {"TOP", T_DEBUFF_ICON_Anchor},
+		{
+			Name = "T_DEBUFF_ICON",
+			Direction = "RIGHT",
+			Mode = "ICON",
+			Interval = 3,
+			Alpha = 1,
+			IconSize = C.filger.buffs_size,
+			Position = {"TOP", T_DEBUFF_ICON_Anchor},
 
 
 		-- },
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Festering Wound
 			{spellID = 194310, unitID = "target", caster = "player", filter = "DEBUFF"},
@@ -1729,17 +1729,17 @@ C["filger_spells"] = {
 
 			-- Trinket Effects
 
-		},
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+		-- },
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Renew
 			{spellID = 139, unitID = "target", caster = "player", filter = "BUFF"},
@@ -2441,17 +2441,17 @@ C["filger_spells"] = {
 
 			-- Trinket Effects
 
-		},
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+		-- },
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Havoc
 			{spellID = 80240, unitID = "target", caster = "player", filter = "DEBUFF"},
