@@ -83,27 +83,27 @@ C["filger_spells"] = {
 			-- Dark Transformation
 			{spellID = 63560, unitID = "pet", caster = "player", filter = "BUFF"},
 		},
-		-- {
-			-- Name = "T_DEBUFF_ICON",
-			-- Direction = "RIGHT",
-			-- Mode = "ICON",
-			-- Interval = C.filger.buffs_space,
-			-- Alpha = 1,
-			-- IconSize = C.filger.buffs_size,
-			-- Position = {"TOP", T_DEBUFF_ICON_Anchor},
+		{
+			Name = "T_DEBUFF_ICON",
+			Direction = "RIGHT",
+			Mode = "ICON",
+			Interval = 3,
+			Alpha = 1,
+			IconSize = C.filger.buffs_size,
+			Position = {"TOP", T_DEBUFF_ICON_Anchor},
 
 
 		-- },
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Festering Wound
 			{spellID = 194310, unitID = "target", caster = "player", filter = "DEBUFF"},
@@ -1391,17 +1391,20 @@ C["filger_spells"] = {
 			{spellID = 214621, unitID = "target", caster = "player", filter = "DEBUFF"},
 			-- Weakened Soul
 			{spellID = 6788, unitID = "player", caster = "player", filter = "DEBUFF"},
-		},
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+
+			-- Trinket Effects
+
+		-- },
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Renew
 			{spellID = 139, unitID = "target", caster = "player", filter = "BUFF"},
@@ -1948,17 +1951,20 @@ C["filger_spells"] = {
 			-- Self
 			-- Enslave Demon
 			{spellID = 1098, unitID = "target", caster = "player", filter = "DEBUFF"},
-		},
-		{
-			Name = "T_DE/BUFF_BAR",
-			Direction = "UP",
-			IconSide = "LEFT",
-			Mode = "BAR",
-			Interval = 3,
-			Alpha = 1,
-			IconSize = 25,
-			BarWidth = 186,
-			Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
+
+			-- Trinket Effects
+
+		-- },
+		-- {
+		-- 	Name = "T_DE/BUFF_BAR",
+		-- 	Direction = "UP",
+		-- 	IconSide = "LEFT",
+		-- 	Mode = "BAR",
+		-- 	Interval = 3,
+		-- 	Alpha = 1,
+		-- 	IconSize = 25,
+		-- 	BarWidth = 186,
+		-- 	Position = {"LEFT", T_DE_BUFF_BAR_Anchor},
 
 			-- Havoc
 			{spellID = 80240, unitID = "target", caster = "player", filter = "DEBUFF"},
