@@ -104,8 +104,8 @@ LPSTAT_CONFIG = {
 	},
 	Talents = {
 		enabled = C.stats.talents,
-		anchor_frame = C.stats.experience and "Experience" or C.stats.durability and "Durability" or C.stats.guild and "Guild" or C.stats.friend and "Friends" or C.stats.fps and "FPS" or C.stats.latency and "Latency" or "Clock", anchor_to = "left", anchor_from = "right",
-		x_off = 3, y_off = 0, tip_frame = "UIParent", tip_anchor = "BOTTOMLEFT", tip_x = 21, tip_y = 20
+		anchor_frame = "Location", anchor_to = "right", anchor_from = "left",
+		x_off = C.stats.location and -23 or 0, y_off = 0, tip_frame = "UIParent", tip_anchor = "BOTTOMRIGHT", tip_x = -21, tip_y = 20
 	},
 -- Bottomright block
 	Coords = {
