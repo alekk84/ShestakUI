@@ -24,9 +24,11 @@ switch:RegisterForClicks("AnyUp")
 switch:SetScript("OnClick", function(_, button)
 	if button == "LeftButton" then
 		SavedOptions.RaidLayout = "HEAL"
+		ShestakUIOptions.raidframe.raid_groups_vertical = false
 		ReloadUI()
 	elseif button == "RightButton" then
-		SavedOptions.RaidLayout = "DPS"
+		SavedOptions.RaidLayout = "HEAL"
+		ShestakUIOptions.raidframe.raid_groups_vertical = true
 		ReloadUI()
 	elseif button == "MiddleButton" then
 		SavedOptions.RaidLayout = "NONE"

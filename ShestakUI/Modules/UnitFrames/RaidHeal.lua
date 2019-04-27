@@ -138,7 +138,7 @@ local function Shared(self, unit)
 	if C.raidframe.icons_raid_mark == true then
 		self.RaidTargetIndicator = self.Health:CreateTexture(nil, "OVERLAY")
 		self.RaidTargetIndicator:SetSize(12, 12)
-		self.RaidTargetIndicator:SetPoint("BOTTOMLEFT", self.Health, -2, -5)
+		self.RaidTargetIndicator:SetPoint("BOTTOM", self.Health, -2, -5)
 	end
 
 	-- LFD role icons
@@ -370,14 +370,16 @@ oUF:Factory(function(self)
 		if C.raidframe.raid_groups_vertical then
 			-- Raid vertical
 			local raid = {}
-			for i = 1, C.raidframe.raid_groups do
+
+			for i = 1, 8 do
+				local autoWidth = 51.5
 				local raidgroup = self:SpawnHeader("oUF_RaidHeal"..i, nil, "custom [@raid6,exists] show;hide",
 					"oUF-initialConfigFunction", [[
 						local header = self:GetParent()
 						self:SetWidth(header:GetAttribute("initial-width"))
 						self:SetHeight(header:GetAttribute("initial-height"))
 					]],
-					"initial-width", unit_width,
+					"initial-width", autoWidth,
 					"initial-height", T.Scale(unit_height),
 					"showRaid", true,
 					"yOffset", T.Scale(-5),
@@ -402,13 +404,14 @@ oUF:Factory(function(self)
 			-- Raid horizontal
 			local raid = {}
 			for i = 1, C.raidframe.raid_groups do
+				local autoWidth = 86.5
 				local raidgroup = self:SpawnHeader("oUF_RaidHeal"..i, nil, "custom [@raid6,exists] show;hide",
 					"oUF-initialConfigFunction", [[
 						local header = self:GetParent()
 						self:SetWidth(header:GetAttribute("initial-width"))
 						self:SetHeight(header:GetAttribute("initial-height"))
 					]],
-					"initial-width", unit_width,
+					"initial-width", autoWidth,
 					"initial-height", T.Scale(unit_height),
 					"showRaid", true,
 					"groupFilter", tostring(i),
