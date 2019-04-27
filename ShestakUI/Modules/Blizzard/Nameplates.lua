@@ -597,7 +597,7 @@ local function style(self, unit)
 						allow = true
 					end
 				else
-					if ((nameplateShowAll or nameplateShowSelf) and not T.DebuffBlackList[name]) then
+					if (not T.DebuffBlackList[name]) then
 						allow = true
 					elseif T.DebuffWhiteList[name] then
 						allow = true
