@@ -132,6 +132,19 @@ elseif C.stats.bottom_line then
 end
 
 ----------------------------------------------------------------------------------------
+--	Damage Meter background
+----------------------------------------------------------------------------------------
+local skadapanel1 = CreateFrame("Frame", "SkadaPanel1", UIParent)
+skadapanel1:CreatePanel("Transparent", 237, C.chat.height + 27, "BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 24)
+skadapanel1:SetBackdropBorderColor(unpack(C.media.classborder_color))
+skadapanel1:SetBackdropColor(0, 0, 0, C.chat.background_alpha)
+
+local skadapanel2 = CreateFrame("Frame", "SkadaPanel2", UIParent)
+skadapanel2:CreatePanel("Transparent", skadapanel1:GetWidth(), skadapanel1:GetHeight(), "BOTTOMRIGHT", skadapanel1, "BOTTOMLEFT", -3, 0)
+skadapanel2:SetBackdropBorderColor(unpack(C.media.classborder_color))
+skadapanel2:SetBackdropColor(0, 0, 0, C.chat.background_alpha)
+
+----------------------------------------------------------------------------------------
 --	Top panel
 ----------------------------------------------------------------------------------------
 if C.toppanel.enable ~= true then return end
